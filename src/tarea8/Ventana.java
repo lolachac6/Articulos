@@ -61,12 +61,14 @@ public class Ventana extends javax.swing.JFrame {
 
         codigoText.setBackground(new java.awt.Color(0, 153, 153));
         codigoText.setForeground(new java.awt.Color(255, 255, 255));
+        codigoText.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         codigoText.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         nombreLabel.setText("Nombre");
 
         nombreText.setBackground(new java.awt.Color(0, 153, 153));
         nombreText.setForeground(new java.awt.Color(255, 255, 255));
+        nombreText.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         nombreText.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         nombreText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,10 +80,17 @@ public class Ventana extends javax.swing.JFrame {
 
         cantidadText.setBackground(new java.awt.Color(0, 153, 153));
         cantidadText.setForeground(new java.awt.Color(255, 255, 255));
+        cantidadText.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         cantidadText.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        cantidadText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cantidadTextActionPerformed(evt);
+            }
+        });
 
         descripcionText.setBackground(new java.awt.Color(0, 153, 153));
         descripcionText.setForeground(new java.awt.Color(255, 255, 255));
+        descripcionText.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         descripcionText.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         descripcionText.setCaretColor(new java.awt.Color(255, 255, 255));
 
@@ -447,6 +456,10 @@ public class Ventana extends javax.swing.JFrame {
         String resultado =  dh.buscadorEspecial(codigo);
         textArea.setText(resultado);
     }//GEN-LAST:event_buscadorEspBtnActionPerformed
+
+    private void cantidadTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cantidadTextActionPerformed
 
     /**
      * @param args the command line arguments
